@@ -7,7 +7,7 @@ const activityFeed = [
   {
     id: 1000,
     title: 'New Photo Uploaded',
-    body: 'Gen uploaded a new photo to her album.'
+    body: 'Lilly uploaded a new photo to her album.'
   },
   {
     id: 2000,
