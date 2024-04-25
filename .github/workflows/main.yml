@@ -1,0 +1,14 @@
+name: Create annotation
+
+on:
+  push:
+
+jobs:
+  create-annotation:
+    runs-on: ubuntu-latest
+    name: Create annotation
+    steps:
+      - name: Create Warning Annotations
+        run: |
+          text="Test annotation very long annotation to simulate a long complier error message and see when the graphite ui wraps annoation lines. As the default annotation box looks fairly small."
+          echo "::warning file=.github/workflows/main.yml,line=14::$text"
